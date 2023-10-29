@@ -1,0 +1,2 @@
+../Src/CortexM4/CortexM4_Core_SCB.c:25:6:SCB_SetPriorityGrouping	24	static
+../Src/CortexM4/CortexM4_Core_SCB.c:55:10:SCB_GetPriorityGrouping	16	static

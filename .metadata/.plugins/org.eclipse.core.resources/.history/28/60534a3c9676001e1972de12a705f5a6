@@ -1,0 +1,114 @@
+/**
+ ******************************************************************************
+ * @file           : CortexM4_Core_SCB.h
+ * @author         : Mohamed Osama
+ * @brief          : Contains The Static Code To Control System Control Block
+ ******************************************************************************/
+#ifndef CORTEXM4_CORE_SCB_H_
+#define CORTEXM4_CORE_SCB_H_
+
+/* ------------------- Includes Start ----------------------------------------*/
+#include "Std_Types.h"
+
+/* ------------------- Includes End ------------------------------------------*/
+
+
+/* ------------------- Macro Declarations Start ------------------------------*/
+#define SCB_BASE (0xE000ED00UL)
+#define SCB ((SCB_Type*)SCB_BASE)
+
+
+/**
+ * @brief System Control Block (SCB) Priority Group Macros
+ *
+ * These macros define the priority group values for the SCB register.
+ * The priority group determines the number of bits allocated for preemptive priority
+ * and subpriority in the interrupt priority level.
+ */
+
+#define SCB_PRIORITYGROUP_0 	0x00000007UL /**< Priority Group 0: 0 bits for preemptive priority, 4 bits for subpriority */
+#define SCB_PRIORITYGROUP_1 	0x00000006UL /**< Priority Group 1: 1 bits for preemptive priority, 3 bits for subpriority */
+#define SCB_PRIORITYGROUP_2 	0x00000005UL /**< Priority Group 2: 2 bits for preemptive priority, 2 bits for subpriority */
+#define SCB_PRIORITYGROUP_3 	0x00000004UL /**< Priority Group 3: 3 bits for preemptive priority, 1 bit for subpriority */
+#define SCB_PRIORITYGROUP_4 	0x00000003UL /**< Priority Group 4: 4 bits for preemptive priority, 0 bits for subpriority */
+
+/**
+ * @brief System Control Block (SCB) AIRCR Register Bit Positions Macros
+ *
+ * These macros define the bit positions for specific fields in the AIRCR register of the SCB.
+ */
+
+#define SCB_AIRCR_PRIGROUP_POS 8U       /**< Priority Group Bit Position: 8 */
+#define SCB_AIRCR_VECTKEY_POS 16U       /**< Vector Key Bit Position: 16 */
+
+
+/**
+ * @brief System Control Block (SCB) AIRCR Register Bit Masks Macros
+ *
+ * These macros define the bit masks for specific fields in the AIRCR register of the SCB.
+ */
+
+#define SCB_AIRCR_PRIGROUP_Msk  (7UL << SCB_AIRCR_PRIGROUP_POS)   /**< Priority Group Bit Mask */
+#define SCB_AIRCR_VECTKEY_Msk   (0xFFFFUL << SCB_AIRCR_VECTKEY_POS)   /**< Vector Key Status Bit Mask */
+
+/* ------------------- Macro Declarations End --------------------------------*/
+
+/* ------------------- Macro Function Declarations Start ---------------------*/
+
+
+/* ------------------- Macro Function Declarations End -----------------------*/
+
+/* ------------------- Data Type Declarations Start --------------------------*/
+/**
+ * @brief Structure representing the System Control Block (SCB) registers.
+ */
+typedef struct {
+    volatile uint32_t CPUID;   /**< Offset: 0x00 - R   - CPUID Base Register */
+    volatile uint32_t ICSR;    /**< Offset: 0x04 - R/W - Interrupt Control and State Register */
+    volatile uint32_t VTOR;    /**< Offset: 0x08 - R/W - Vector Table Offset Register */
+    volatile uint32_t AIRCR;   /**< Offset: 0x0C - R/W - Application Interrupt and Reset Control Register */
+    volatile uint32_t SCR;     /**< Offset: 0x10 - R/W - System Control Register */
+    volatile uint32_t CCR;     /**< Offset: 0x14 - R/W - Configuration and Control Register */
+    volatile uint32_t SHPR1;   /**< Offset: 0x18 - R/W - System Handler Priority Register 1 */
+    volatile uint32_t SHPR2;   /**< Offset: 0x1C - R/W - System Handler Priority Register 2 */
+    volatile uint32_t SHPR3;   /**< Offset: 0x20 - R/W - System Handler Priority Register 3 */
+    volatile uint32_t SHCRS;   /**< Offset: 0x24 - R/W - System Handler Control and State Register */
+    volatile uint32_t CFSR;    /**< Offset: 0x28 - R/W - Configurable Fault Status Register */
+} SCB_Type;
+
+/* ------------------- Data Type Declarations End ----------------------------*/
+
+/* ------------------- Software Interfaces Declarations Start ----------------*/
+
+/**
+ * @brief Set the priority grouping for the System Control Block (SCB).
+ *
+ * @details This function sets the priority grouping for the SCB, which determines the number of bits allocated
+ * 			for preemptive priority and subpriority in the interrupt priority level.
+ *
+ * @param PriorityGroup The priority grouping value to be set. It should be one of the following macros:
+ *                      - SCB_PRIORITYGROUP_0: 0 bits for preemptive priority,  4 bits for subpriority
+ *                      - SCB_PRIORITYGROUP_1: 1 bit for  preemptive priority,  3 bits for subpriority
+ *                      - SCB_PRIORITYGROUP_2: 2 bits for preemptive priority,  2 bits for subpriority
+ *                      - SCB_PRIORITYGROUP_3: 3 bits for preemptive priority,  1 bit for subpriority
+ *                      - SCB_PRIORITYGROUP_4: 4 bits for preemptive priority,  0 bits for subpriority
+ *
+ * @note Changing the priority grouping affects the allocation of priority levels for interrupts.
+ *       It is recommended to set the priority grouping early in the system initialization.
+ */
+void SCB_SetPriorityGrouping(uint32_t PriorityGroup);
+
+
+/* ------------------- Software Interfaces Declarations End ------------------*/
+
+
+
+
+#endif /* CORTEXM4_CORE_SCB_H_ */
+
+
+
+
+
+
+

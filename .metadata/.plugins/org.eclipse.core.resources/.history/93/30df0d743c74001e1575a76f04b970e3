@@ -1,0 +1,8 @@
+/**
+ ******************************************************************************
+ * @file           : CortexM4_Core_NVIC.c
+ * @author         : Mohamed Osama
+ * @brief          : Contains The Static Code To Control NVIC
+ ******************************************************************************/
+#include "CortexM4_Core_NVIC.h"
+

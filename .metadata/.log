@@ -1,0 +1,114 @@
+!SESSION 2023-10-26 12:43:22.633 -----------------------------------------------
+eclipse.buildId=Version 1.13.2
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-10-26 12:44:46.897
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-10-26 12:44:46.906
+!MESSAGE Log4j2 initialized with config file E:\The Courses\Embedded Systems\ARM Interfacing\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-10-26 12:45:09.147
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-10-26 12:50:48.136
+!MESSAGE Indexed 'NVIC_Driver' (3 sources, 53 headers) in 2.5 sec: 1,950 declarations; 2,832 references; 0 unresolved inclusions; 2 syntax errors; 2 unresolved names (0.042%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-10-26 17:38:31.699
+!MESSAGE Indexed 'NVIC_DRIVER2' (3 sources, 53 headers) in 0.972 sec: 1,950 declarations; 2,832 references; 0 unresolved inclusions; 2 syntax errors; 2 unresolved names (0.042%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-10-26 17:44:04.813
+!MESSAGE Indexed 'NVIC2' (3 sources, 53 headers) in 0.39 sec: 1,950 declarations; 2,832 references; 0 unresolved inclusions; 2 syntax errors; 2 unresolved names (0.042%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-10-26 17:46:26.038
+!MESSAGE Indexed 'NVIC2' (4 sources, 55 headers) in 0.288 sec: 1,971 declarations; 2,849 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.041%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-10-26 17:50:16.835
+!MESSAGE Indexed 'NVIC_Driver' (4 sources, 55 headers) in 0.365 sec: 1,971 declarations; 2,849 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.041%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-10-26 18:00:14.219
+!MESSAGE Indexed 'nvic2' (2 sources, 53 headers) in 0.271 sec: 1,948 declarations; 2,830 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.042%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-10-26 18:01:27.902
+!MESSAGE Indexed 'nvic2' (4 sources, 55 headers) in 0.26 sec: 1,971 declarations; 2,849 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.041%)
+!SESSION 2023-10-26 22:20:02.168 -----------------------------------------------
+eclipse.buildId=Version 1.13.2
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-10-26 22:20:30.885
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-10-26 22:20:30.927
+!MESSAGE Log4j2 initialized with config file E:\The Courses\Embedded Systems\ARM Interfacing\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-10-26 22:20:46.673
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-10-26 23:15:58.763
+!MESSAGE Indexed 'NVIC_Driver' (4 sources, 55 headers) in 1.78 sec: 2,083 declarations; 2,861 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.04%)
+!SESSION 2023-10-27 14:22:22.781 -----------------------------------------------
+eclipse.buildId=Version 1.13.2
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-10-27 14:23:35.762
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-10-27 14:23:35.831
+!MESSAGE Log4j2 initialized with config file E:\The Courses\Embedded Systems\ARM Interfacing\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-10-27 14:24:00.992
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2023-10-27 23:31:42.294 -----------------------------------------------
+eclipse.buildId=Version 1.13.2
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-10-27 23:34:17.879
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-10-27 23:34:18.001
+!MESSAGE Log4j2 initialized with config file E:\The Courses\Embedded Systems\ARM Interfacing\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-10-27 23:35:10.985
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2023-10-29 00:02:01.701 -----------------------------------------------
+eclipse.buildId=Version 1.13.2
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-10-29 00:02:41.763
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-10-29 00:02:41.825
+!MESSAGE Log4j2 initialized with config file E:\The Courses\Embedded Systems\ARM Interfacing\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-10-29 00:02:58.039
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2023-10-29 21:21:43.478 -----------------------------------------------
+eclipse.buildId=Version 1.13.2
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-10-29 21:22:22.446
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-10-29 21:22:22.492
+!MESSAGE Log4j2 initialized with config file E:\The Courses\Embedded Systems\ARM Interfacing\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-10-29 21:22:36.577
+!MESSAGE Started RMI Server, listening on port 41337

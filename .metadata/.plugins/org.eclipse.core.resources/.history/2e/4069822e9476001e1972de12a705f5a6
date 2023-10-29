@@ -1,0 +1,14 @@
+/**
+ ******************************************************************************
+ * @file           : main.c
+ * @author         : Mohamed Osama
+ * @brief          : Main program body
+ ******************************************************************************/
+#include "CortexM4_Core_NVIC.h"
+
+int main(void)
+{
+	NVIC->ISER[1] |=(1<<7);
+    /* Loop forever */
+	for(;;);
+}

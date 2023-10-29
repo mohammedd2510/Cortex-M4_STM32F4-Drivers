@@ -1,0 +1,63 @@
+/**
+ ******************************************************************************
+ * @file           : CortexM4_Core_SCB.h
+ * @author         : Mohamed Osama
+ * @brief          : Contains The Static Code To Control System Control Block
+ ******************************************************************************/
+#ifndef CORTEXM4_CORE_SCB_H_
+#define CORTEXM4_CORE_SCB_H_
+
+/* ------------------- Includes Start ----------------------------------------*/
+#include "Std_Types.h"
+
+/* ------------------- Includes End ------------------------------------------*/
+
+
+/* ------------------- Macro Declarations Start ------------------------------*/
+#define SCB_BASE (0xE000ED00UL)
+#define SCB ((SCB_Type*)SCB_BASE)
+
+/* ------------------- Macro Declarations End --------------------------------*/
+
+/* ------------------- Macro Function Declarations Start ---------------------*/
+
+
+/* ------------------- Macro Function Declarations End -----------------------*/
+
+/* ------------------- Data Type Declarations Start --------------------------*/
+/**
+ * @brief Structure representing the System Control Block (SCB) registers.
+ */
+typedef struct {
+    volatile uint32_t CPUID;   /**< Offset: 0x00 - R   - CPUID Base Register */
+    volatile uint32_t ICSR;    /**< Offset: 0x04 - R/W - Interrupt Control and State Register */
+    volatile uint32_t VTOR;    /**< Offset: 0x08 - R/W - Vector Table Offset Register */
+    volatile uint32_t AIRCR;   /**< Offset: 0x0C - R/W - Application Interrupt and Reset Control Register */
+    volatile uint32_t SCR;     /**< Offset: 0x10 - R/W - System Control Register */
+    volatile uint32_t CCR;     /**< Offset: 0x14 - R/W - Configuration and Control Register */
+    volatile uint32_t SHPR1;   /**< Offset: 0x18 - R/W - System Handler Priority Register 1 */
+    volatile uint32_t SHPR2;   /**< Offset: 0x1C - R/W - System Handler Priority Register 2 */
+    volatile uint32_t SHPR3;   /**< Offset: 0x20 - R/W - System Handler Priority Register 3 */
+    volatile uint32_t SHCRS;   /**< Offset: 0x24 - R/W - System Handler Control and State Register */
+    volatile uint32_t CFSR;    /**< Offset: 0x28 - R/W - Configurable Fault Status Register */
+} SCB_Type;
+
+/* ------------------- Data Type Declarations End ----------------------------*/
+
+/* ------------------- Software Interfaces Declarations Start ----------------*/
+
+
+
+/* ------------------- Software Interfaces Declarations End ------------------*/
+
+
+
+
+#endif /* CORTEXM4_CORE_SCB_H_ */
+
+
+
+
+
+
+

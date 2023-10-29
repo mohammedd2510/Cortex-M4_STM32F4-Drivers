@@ -1,0 +1,7 @@
+../Src/CortexM4/CortexM4_Core_NVIC.c:15:6:NVIC_EnableIRQ	16	static
+../Src/CortexM4/CortexM4_Core_NVIC.c:26:6:NVIC_DisableIRQ	16	static
+../Src/CortexM4/CortexM4_Core_NVIC.c:37:6:NVIC_SetPendingIRQ	16	static
+../Src/CortexM4/CortexM4_Core_NVIC.c:49:6:NVIC_ClearPendingIRQ	16	static
+../Src/CortexM4/CortexM4_Core_NVIC.c:63:10:NVIC_GetActiveIRQ	16	static
+../Src/CortexM4/CortexM4_Core_NVIC.c:87:6:NVIC_SetPriority	16	static
+../Src/CortexM4/CortexM4_Core_NVIC.c:115:10:NVIC_GetPriority	16	static
