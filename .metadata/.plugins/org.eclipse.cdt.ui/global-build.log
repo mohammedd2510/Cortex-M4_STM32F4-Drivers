@@ -1,7 +1,6 @@
-23:08:54 **** Incremental Build of configuration Debug for project NVIC_Driver ****
+01:49:00 **** Incremental Build of configuration Debug for project NVIC_Driver ****
 make -j8 all 
 arm-none-eabi-gcc "../Src/CortexM4/CortexM4_Core_NVIC.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/CortexM4/CortexM4_Core_NVIC.d" -MT"Src/CortexM4/CortexM4_Core_NVIC.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/CortexM4/CortexM4_Core_NVIC.o"
-arm-none-eabi-gcc "../Src/CortexM4/CortexM4_Core_SCB.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/CortexM4/CortexM4_Core_SCB.d" -MT"Src/CortexM4/CortexM4_Core_SCB.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/CortexM4/CortexM4_Core_SCB.o"
 arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
 arm-none-eabi-gcc -o "NVIC_Driver.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\The Courses\Embedded Systems\ARM Interfacing\NVIC_Driver\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NVIC_Driver.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: NVIC_Driver.elf
@@ -9,7 +8,7 @@ Finished building target: NVIC_Driver.elf
 arm-none-eabi-size   NVIC_Driver.elf 
 arm-none-eabi-objdump -h -S  NVIC_Driver.elf  > "NVIC_Driver.list"
    text	   data	    bss	    dec	    hex	filename
-    756	      8	   1568	   2332	    91c	NVIC_Driver.elf
+    804	      8	   1568	   2380	    94c	NVIC_Driver.elf
 Finished building: default.size.stdout
  
 Finished building: NVIC_Driver.list

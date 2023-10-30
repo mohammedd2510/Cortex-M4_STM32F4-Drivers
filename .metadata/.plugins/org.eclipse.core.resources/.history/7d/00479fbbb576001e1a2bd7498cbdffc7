@@ -10,7 +10,7 @@
 int main(void)
 {
 	NVIC_EnableIRQ(USART2_IRQn);
-	NVIC_GenerateSGI(USART2_IRQn);
+	generateSGI(USART2_IRQn);
     /* Loop forever */
 	for(;;);
 }

@@ -227,7 +227,7 @@ uint32_t NVIC_GetPriority(IRQn_Type IRQn);
  * @note This function does not return a value.
  *       The specific implementation details of the generateSGI function may vary depending on the system.
  */
-void NVIC_GenerateSGI(IRQn_Type IRQn);
+void generateSGI(IRQn_Type IRQn);
 
 /* ------------------- Software Interfaces Declarations End ------------------*/
 

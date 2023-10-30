@@ -138,12 +138,6 @@ uint32_t NVIC_GetPriority(IRQn_Type IRQn)
  */
 void NVIC_GenerateSGI(IRQn_Type IRQn)
 {
-	if((uint8_t)IRQn >=0)
-	{
-		NVIC->STIR = (uint8_t)IRQn;
-	}
-	else
-	{
-		/*Nothing*/
-	}
+
+	NVIC->STIR = (uint8_t)IRQn;
 }
