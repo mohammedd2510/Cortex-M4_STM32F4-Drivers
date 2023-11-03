@@ -1,0 +1,8 @@
+/**
+ ******************************************************************************
+ * @file           : STM32F4xx_HAL_RCC.h
+ * @author         : Mohamed Osama
+ * @brief          : Contains The Static Code to control the RCC Module
+ ******************************************************************************/
+#include "HAL_Drivers/RCC/STM32F4xx_HAL_RCC.h"
+

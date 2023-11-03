@@ -1,0 +1,16 @@
+/**
+ ******************************************************************************
+ * @file           : Common_Macros.h
+ * @author         : Mohamed Osama
+ * @brief          : Contains The declarations of Common Macros
+ ******************************************************************************/
+
+#ifndef COMMON_COMMON_MACROS_H_
+#define COMMON_COMMON_MACROS_H_
+
+#define SET_BIT(REG, BIT)   	( (REG) |=  (BIT)  )
+#define CLEAR_BIT(REG, BIT)     ( (REG) &= ~(BIT) )
+#define TOGGLE_BIT(REG, BIT)    ( (REG) ^=  (BIT)  )
+
+
+#endif /* COMMON_COMMON_MACROS_H_ */

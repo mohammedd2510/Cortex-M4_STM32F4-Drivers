@@ -1,0 +1,2 @@
+../Src/HAL_Drivers/RCC/STM32F4xx_HAL_RCC.c:22:19:HAL_RCC_OscConfig	14
+../Src/HAL_Drivers/RCC/STM32F4xx_HAL_RCC.c:105:19:HAL_RCC_ClockConfig	2

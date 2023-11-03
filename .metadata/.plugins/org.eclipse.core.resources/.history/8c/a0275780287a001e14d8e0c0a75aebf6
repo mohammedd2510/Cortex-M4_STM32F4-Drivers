@@ -1,0 +1,26 @@
+/*
+ * delay_us.c
+ *
+ *  Created on: Nov 3, 2023
+ *      Author: mohop
+ */
+
+#include "delay_us.h"
+
+void delay_us(uint32_t us) {
+	// Configure SysTick timer
+	    SysTick_Config(SystemCoreClock / 1000000);  // Set SysTick interrupt to occur every 1us
+
+	    uint32_t startTick = SysTick->VAL;  // Get current SysTick value
+
+	    // Calculate the number of ticks to wait
+	    uint32_t targetTicks = us;
+
+	    // Wait until the difference between current and target ticks is reached
+	    while ((SysTick->VAL - startTick) < targetTicks) {
+	        // Wait
+	    }
+
+	    // Disable SysTick timer
+	    SysTick->CTRL &= ~SysTick_CTRL_ENABLE_Msk;
+}

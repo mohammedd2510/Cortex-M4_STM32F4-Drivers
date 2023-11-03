@@ -1,0 +1,64 @@
+/**
+ ******************************************************************************
+ * @file           : CortexM4_Core_SysTick.h
+ * @author         : Mohamed Osama
+ * @brief          : Contains The Static Code To Control System Timer
+ ******************************************************************************/
+
+#include "CortexM4/CortexM4_Core_SysTick.h"
+
+/**
+  * @brief  Initializes the SysTick timer with the specified number of ticks.
+  * @details This function initializes the SysTick timer with the provided number of ticks.
+  *          The SysTick timer is a 24-bit down counter that generates an interrupt when it reaches zero.
+  * @param  SysTick_Ticks: The number of ticks to be loaded into the SysTick timer.
+  * @return 0 if the initialization is successful, 1 if it fails.
+  */
+uint32_t SysTick_Init(uint32_t SysTick_Ticks){
+
+}
+
+/**
+  * @brief  Deinitializes the SysTick timer.
+  * @details This function deinitializes the SysTick timer by disabling it and clearing any pending interrupts.
+  * @param  None
+  * @return None
+  */
+void SysTick_DeInit(void);
+
+/**
+  * @brief  Blocks the execution for the specified number of ticks using the SysTick timer.
+  * @details This function blocks the execution for the provided number of ticks using the SysTick timer.
+  *          It waits until the SysTick timer reaches zero.
+  * @param  SysTick_Ticks: The number of ticks to wait.
+  * @return None
+  */
+void SysTick_WaitBlocking(uint32_t SysTick_Ticks);
+
+/**
+  * @brief  Sets up a single interval using the SysTick timer and registers a callback function.
+  * @details This function sets up a single interval using the SysTick timer with the provided number of ticks.
+  *          It also registers a callback function to be called when the SysTick timer reaches zero.
+  * @param  SysTick_Ticks: The number of ticks for the interval.
+  * @param  CallBack: Pointer to the callback function.
+  * @return None
+  */
+void SysTick_SingelInterval(uint32_t SysTick_Ticks, ptrFunction *CallBack);
+
+/**
+  * @brief  Sets up a periodic interval using the SysTick timer and registers a callback function.
+  * @details This function sets up a periodic interval using the SysTick timer with the provided number of ticks.
+  *          It also registers a callback function to be called when the SysTick timer reaches zero.
+  * @param  SysTick_Ticks: The number of ticks for the interval.
+  * @param  CallBack: Pointer to the callback function.
+  * @return None
+  */
+void SysTick_PeriodicInterval(uint32_t SysTick_Ticks, ptrFunction *CallBack);
+
+/**
+  * @brief  Retrieves the remaining number of ticks in the SysTick timer.
+  * @details This function retrieves the remaining number of ticks in the SysTick timer.
+  * @param  None
+  * @return The remaining number of ticks in the SysTick timer.
+  */
+uint32_t SysTick_GetRemainingTicks(void);

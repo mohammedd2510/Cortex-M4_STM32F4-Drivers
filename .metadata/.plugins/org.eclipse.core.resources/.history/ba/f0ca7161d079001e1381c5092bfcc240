@@ -1,0 +1,88 @@
+/*
+ * chr_lcd.h
+ *
+ *  Created on: Nov 2, 2023
+ *      Author: mohop
+ */
+
+#ifndef CHR_LCD_CHR_LCD_H_
+#define CHR_LCD_CHR_LCD_H_
+
+#include "stm32f1xx.h"
+#include"..\Common\Std_Types.h"
+#include"tim.h"
+
+/* Section : Macros Declaration */
+#define _LCD_CLEAR 0X01
+#define _LCD_RETURN_HOME 0X02
+#define _LCD_ENTRY_MODE_DEC_SHIFT_OFF 0X04
+#define _LCD_ENTRY_MODE_DEC_SHIFT_ON 0X05
+#define _LCD_ENTRY_MODE_INC_SHIFT_OFF 0X06
+#define _LCD_ENTRY_MODE_INC_SHIFT_ON 0X07
+#define _LCD_CURSOR_MOVE_SHIFT_LEFT 0X10
+#define _LCD_CURSOR_MOVE_SHIFT_RIGHT 0X14
+#define _LCD_DISPLAY_SHIFT_LEFT 0X18
+#define _LCD_DISPLAY_SHIFT_RIGHT 0X1C
+#define _LCD_DISPLAY_ON_UNDERLINE_OFF_CURSOR_OFF 0X0C
+#define _LCD_DISPLAY_ON_UNDERLINE_ON_CURSOR_OFF 0X0E
+#define _LCD_DISPLAY_ON_UNDERLINE_OFF_CURSOR_ON 0X0D
+#define _LCD_DISPLAY_ON_UNDERLINE_ON_CURSOR_ON 0X0F
+#define _LCD_DISPLAY_OFF_CURSOR_OFF 0X08
+#define _LCD_8BIT_MODE_2_LINE 0X38
+#define _LCD_4BIT_MODE_2_LINE 0X28
+#define _LCD_CGRAM_START 0X40
+#define _LCD_DDRAM_START 0X80
+#define _LCD_8BIT_MODE_2times 0x33
+#define _LCD_8BIT_MODE_THEN_4BIT_MODE 0x32
+#define ROW1 1
+#define ROW2 2
+#define ROW3 3
+#define ROW4 4
+
+/* Section : Macro Functions Declaration */
+
+
+/* Section : Data Types Declaration */
+typedef struct {
+    GPIO_TypeDef* lcd_rs_port;
+    uint16_t lcd_rs_pin;
+    GPIO_TypeDef* lcd_en_port;
+    uint16_t lcd_en_pin;
+    GPIO_TypeDef* lcd_data_port[4];
+    uint16_t* lcd_data_pin[4];
+}chr_lcd_4bit_t;
+
+typedef struct {
+	GPIO_TypeDef* lcd_rs_port;
+	    uint16_t lcd_rs_pin;
+	    GPIO_TypeDef* lcd_en_port;
+	    uint16_t lcd_en_pin;
+	    GPIO_TypeDef* lcd_data_port[8];
+	    uint16_t* lcd_data_pin[8];
+}chr_lcd_8bit_t;
+/* Section : Functions Declaration */
+Std_ReturnType lcd_4bit_initialize (const chr_lcd_4bit_t *lcd);
+Std_ReturnType lcd_4bit_send_command (const chr_lcd_4bit_t *lcd, uint8_t command);
+Std_ReturnType lcd_4bit_send_char_data (const chr_lcd_4bit_t *lcd, uint8_t data);
+Std_ReturnType lcd_4bit_send_char_data_pos (const chr_lcd_4bit_t *lcd ,uint8_t row ,uint8_t column , uint8_t data);
+Std_ReturnType lcd_4bit_send_string (const chr_lcd_4bit_t *lcd, uint8_t *str);
+Std_ReturnType lcd_4bit_send_string_pos (const chr_lcd_4bit_t *lcd ,uint8_t row ,uint8_t column , uint8_t *str);
+Std_ReturnType lcd_4bit_send_custom_char(const chr_lcd_4bit_t *lcd ,uint8_t row ,uint8_t column ,
+                                         const uint8_t _chr[],uint8_t mem_pos);
+void delay_us(uint32_t us);
+
+
+Std_ReturnType lcd_8bit_initialize (const chr_lcd_8bit_t *lcd);
+Std_ReturnType lcd_8bit_send_command (const chr_lcd_8bit_t *lcd, uint8_t command);
+Std_ReturnType lcd_8bit_send_char_data (const chr_lcd_8bit_t *lcd, uint8_t data);
+Std_ReturnType lcd_8bit_send_char_data_pos (const chr_lcd_8bit_t *lcd ,uint8_t row ,uint8_t column , uint8_t data);
+Std_ReturnType lcd_8bit_send_string (const chr_lcd_8bit_t *lcd, uint8_t *str);
+Std_ReturnType lcd_8bit_send_string_pos (const chr_lcd_8bit_t *lcd ,uint8_t row ,uint8_t column , uint8_t *str);
+Std_ReturnType lcd_8bit_send_custom_char(const chr_lcd_8bit_t *lcd ,uint8_t row ,uint8_t column ,
+                                         const uint8_t _chr[],uint8_t mem_pos);
+
+Std_ReturnType convert_uint8_t_to_string(uint8_t value , uint8_t *str);
+Std_ReturnType convert_uint16_t_to_string(uint16_t value , uint8_t *str);
+Std_ReturnType convert_uint32_t_to_string(uint32_t value , uint8_t *str);
+
+#endif /* CHR_LCD_CHR_LCD_H_ */

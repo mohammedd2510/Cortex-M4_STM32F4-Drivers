@@ -1,0 +1,13 @@
+/*
+ * STM32F4xx_HAL_RCC.h
+ *
+ *  Created on: Oct 31, 2023
+ *      Author: mohop
+ */
+
+#ifndef HAL_DRIVERS_RCC_STM32F4XX_HAL_RCC_H_
+#define HAL_DRIVERS_RCC_STM32F4XX_HAL_RCC_H_
+
+
+
+#endif /* HAL_DRIVERS_RCC_STM32F4XX_HAL_RCC_H_ */

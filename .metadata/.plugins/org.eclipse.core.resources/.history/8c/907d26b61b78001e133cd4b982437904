@@ -1,0 +1,57 @@
+/**
+ ******************************************************************************
+ * @file           : STM32F4xx_HAL_RCC.h
+ * @author         : Mohamed Osama
+ * @brief          : Contains The Static Code to control the RCC Module
+ ******************************************************************************/
+#include "HAL_Drivers/RCC/STM32F4xx_HAL_RCC.h"
+
+/**
+  * @brief  Configures the RCC oscillators based on the specified parameters in the RCC_OscInitTypeDef structure.
+  *
+  * @details This function configures the RCC oscillators based on the parameters specified in the RCC_OscInitTypeDef structure.
+  *          It enables or disables the HSE (High-Speed External) oscillator, HSI (High-Speed Internal) oscillator,
+  *          LSE (Low-Speed External) oscillator, LSI (Low-Speed Internal) oscillator, and PLL (Phase-Locked Loop).
+  *
+  * @param  RCC_OscInitStruct: pointer to an RCC_OscInitTypeDef structure that contains the configuration information for the RCC oscillators.
+  *
+  * @retval HAL_StatusTypeDef: HAL status.
+  *          - HAL_OK: Operation completed successfully.
+  *          - HAL_ERROR: Operation completed with an error.
+  */
+HAL_StatusTypeDef HAL_RCC_OscConfig(RCC_OscInitTypeDef  *RCC_OscInitStruct)
+{
+	HAL_StatusTypeDef RetStatus = HAL_OK;
+	if(NULL == RCC_OscInitStruct )
+	{
+		RetStatus = HAL_ERROR;
+	}
+	else
+	{
+		if(RCC_OSCILLATORTYPE_HSE == RCC_OscInitStruct->OscillatorType)
+		{
+			if(RCC_HSE_ON == RCC_OscInitStruct->HSEState){
+				SET_BIT(RCC->CR , RCC)
+			}
+			else if (RCC_HSE_OFF == RCC_OscInitStruct->HSEState){
+
+			}
+			else { /* Nothing */ }
+		}
+		else if(RCC_OSCILLATORTYPE_HSI == RCC_OscInitStruct->OscillatorType)
+		{
+
+		}
+		else if(RCC_OSCILLATORTYPE_LSE == RCC_OscInitStruct->OscillatorType)
+		{
+
+		}
+		else if(RCC_OSCILLATORTYPE_LSI == RCC_OscInitStruct->OscillatorType)
+		{
+
+		}
+		else { /* Nothing */}
+	}
+	return RetStatus;
+}
+

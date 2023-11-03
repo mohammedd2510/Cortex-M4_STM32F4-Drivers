@@ -1,0 +1,17 @@
+11:11:30 **** Incremental Build of configuration Release for project BluePill Test ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "BluePill Test.elf" @"objects.list"   -mcpu=cortex-m3 -T"E:\The Courses\Embedded Systems\ARM Interfacing\BluePill Test\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BluePill Test.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BluePill Test.elf
+ 
+arm-none-eabi-size   BluePill\ Test.elf 
+arm-none-eabi-objdump -h -S  BluePill\ Test.elf  > "BluePill Test.list"
+   text	   data	    bss	    dec	    hex	filename
+   3372	     60	   1572	   5004	   138c	BluePill Test.elf
+Finished building: default.size.stdout
+ 
+Finished building: BluePill Test.list
+ 
+
+11:11:31 Build Finished. 0 errors, 0 warnings. (took 455ms)
+

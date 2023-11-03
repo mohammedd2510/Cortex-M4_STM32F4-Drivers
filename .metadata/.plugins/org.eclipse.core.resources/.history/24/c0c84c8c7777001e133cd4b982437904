@@ -1,0 +1,57 @@
+/**
+ ******************************************************************************
+ * @file           : STM32F4xx_HAL_RCC.h
+ * @author         : Mohamed Osama
+ * @brief          : Contains The declarations to control the RCC Module
+ ******************************************************************************/
+#ifndef HAL_DRIVERS_RCC_STM32F4XX_HAL_RCC_H_
+#define HAL_DRIVERS_RCC_STM32F4XX_HAL_RCC_H_
+
+/* ------------------- Includes Start ----------------------------------------*/
+#include "Common/Std_Types.h"
+
+/* ------------------- Includes End ------------------------------------------*/
+
+
+/* ------------------- Macro Declarations Start ------------------------------*/
+
+/* ------------------- Macro Declarations End --------------------------------*/
+
+/* ------------------- Macro Function Declarations Start ---------------------*/
+
+
+/* ------------------- Macro Function Declarations End -----------------------*/
+
+/* ------------------- Data Type Declarations Start --------------------------*/
+
+/* ------------------- Data Type Declarations End ----------------------------*/
+
+/* ------------------- Software Interfaces Declarations Start ----------------*/
+
+
+
+/* ------------------- Software Interfaces Declarations End ------------------*/
+
+
+
+#endif /* HAL_DRIVERS_RCC_STM32F4XX_HAL_RCC_H_ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

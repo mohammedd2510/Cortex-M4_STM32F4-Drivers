@@ -1,0 +1,13 @@
+/*
+ * STM32F4xx_Peripheral_Defs.h
+ *
+ *  Created on: Oct 31, 2023
+ *      Author: mohop
+ */
+
+#ifndef HAL_DRIVERS_COMMON_STM32F4XX_PERIPHERAL_DEFS_H_
+#define HAL_DRIVERS_COMMON_STM32F4XX_PERIPHERAL_DEFS_H_
+
+
+
+#endif /* HAL_DRIVERS_COMMON_STM32F4XX_PERIPHERAL_DEFS_H_ */

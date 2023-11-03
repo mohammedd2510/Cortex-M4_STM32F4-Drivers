@@ -1,0 +1,79 @@
+/**
+ ******************************************************************************
+ * @file           : CortexM4_Core_SysTick.h
+ * @author         : Mohamed Osama
+ * @brief          : Contains The declarations To Control System Timer
+ ******************************************************************************/
+#ifndef CORTEXM4_CORE_SYSTICK_H_
+#define CORTEXM4_CORE_SYSTICK_H_
+
+/* ------------------- Includes Start ----------------------------------------*/
+#include "Common/Std_Types.h"
+
+/* ------------------- Includes End ------------------------------------------*/
+
+
+/* ------------------- Macro Declarations Start ------------------------------*/
+ /* Memory Mapping of Core Hardware */
+#define SysTick_BASE 	(0xE000E010UL)  // Base address of the SysTick peripheral
+#define SysTick			((SysTick_Type*)SysTick_BASE)  // Pointer to the SysTick peripheral registers
+
+/* SysTick Control / Status Register Definitions */
+#define SysTick_CTRL_ENABLE_Pos 			0U
+#define SysTick_CTRL_ENABLE_Msk 			(1<<)
+
+
+/* ------------------- Macro Declarations End --------------------------------*/
+
+/* ------------------- Macro Function Declarations Start ---------------------*/
+
+
+/* ------------------- Macro Function Declarations End -----------------------*/
+
+/* ------------------- Data Type Declarations Start --------------------------*/
+/**
+  * @brief  SysTick Control and Status Register Structure
+  *
+  * This structure represents the SysTick Control and Status Register (SysTick_Type).
+  * It contains the following members:
+  *
+  * @note   The structure fields represent the register offsets and access types.
+  *
+  * @ingroup SysTick
+  */
+typedef struct
+{
+	volatile uint32_t CTRL;   /*!< Offset: 0x00 (R/W)  SysTick Control and Status Register */
+
+	volatile uint32_t LOAD;   /*!< Offset: 0x04 (R/W)  SysTick Reload Value Register */
+
+	volatile uint32_t VAL;    /*!< Offset: 0x08 (R/W)  SysTick Current Value Register */
+
+	volatile uint32_t CALIB;  /*!< Offset: 0x0C (R/ )  SysTick Calibration Value Register */
+} SysTick_Type;
+
+/* ------------------- Data Type Declarations End ----------------------------*/
+
+/* ------------------- Software Interfaces Declarations Start ----------------*/
+
+
+
+/* ------------------- Software Interfaces Declarations End ------------------*/
+
+
+
+#endif /* CORTEXM4_CORTEXM4_CORE_SYSTICK_H_ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
